@@ -98,7 +98,12 @@ export function ContactForm() {
   const errorList = Object.values(errors).filter(Boolean);
 
   return (
-    <form onSubmit={onSubmit} noValidate className="rounded-3xl border border-onyx/10 bg-alabaster/60 p-6 sm:p-8">
+    <form
+      method="dialog"
+      onSubmit={onSubmit}
+      noValidate
+      className="rounded-3xl border border-onyx/10 bg-alabaster/60 p-6 sm:p-8"
+    >
       <p className="font-mono text-[0.68rem] uppercase tracking-[0.22em] text-royal">Pedido</p>
       <h2 className="mt-3 text-4xl text-onyx">Marcar uma vaga</h2>
       <p className="mt-3 text-sm text-onyx/70">Todos os campos são obrigatórios.</p>
